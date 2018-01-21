@@ -11,6 +11,7 @@ License:       BSD
 Group:         Development/Libraries/Tcl
 Source:        %{packagename}-%{version}.tar.gz
 URL:           http://woof.sourceforge.net/ruff.html
+BuildArch:     noarch
 BuildRequires: tcl >= 8.6
 Requires:      tcl >= 8.6
 Requires:      tcllib
