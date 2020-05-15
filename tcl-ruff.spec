@@ -5,7 +5,7 @@
 
 Name:          tcl-ruff
 Summary:       Generates reference documentation for Tcl programs
-Version:       0.4
+Version:       1.0.4
 Release:       0
 License:       BSD
 Group:         Development/Libraries/Tcl
@@ -25,20 +25,20 @@ Ruff! generates documentation using Tcl's runtime system to extract proc,
 class and method definitions.
 
 %prep
-%setup -q -n %{packagename}
+%setup -q -n %{packagename}-%{version}
 
 %build
 
 %install
 dir=%buildroot%tcl_noarchdir/%packagename%version
 mkdir -p $dir
-cp *.tcl $dir
+cp src/*.tcl $dir
 
 %clean
 rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc ruff.html
+%doc doc/ruff.html doc/ruff_ruff.html doc/ruff_ruff_sample.html doc/sample.tcl
 %tcl_noarchdir/%packagename%version
 
