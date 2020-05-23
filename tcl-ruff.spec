@@ -33,6 +33,10 @@ class and method definitions.
 dir=%buildroot%tcl_noarchdir/%packagename%version
 mkdir -p $dir
 cp src/*.tcl $dir
+chmod 644 src/*.js
+chmod 644 src/*.css
+cp src/*.js $dir
+cp src/*.css $dir
 
 %clean
 rm -rf %buildroot
