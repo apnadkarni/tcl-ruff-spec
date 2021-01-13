@@ -5,7 +5,7 @@
 
 Name:          tcl-ruff
 Summary:       Generates reference documentation for Tcl programs
-Version:       1.0.4
+Version:       1.0.5
 Release:       0
 License:       BSD
 Group:         Development/Libraries/Tcl
