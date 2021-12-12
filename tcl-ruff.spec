@@ -5,7 +5,7 @@
 
 Name:          tcl-ruff
 Summary:       Generates reference documentation for Tcl programs
-Version:       1.2.1
+Version:       2.0
 Release:       0
 License:       BSD-2-Clause
 Group:         Development/Libraries/Tcl
@@ -33,16 +33,15 @@ class and method definitions.
 dir=%buildroot%tcl_noarchdir/%packagename%version
 mkdir -p $dir
 cp src/*.tcl $dir
-chmod 644 src/*.js
-chmod 644 src/*.css
-cp src/*.js $dir
 cp src/*.css $dir
+chmod 644 src/assets/*
+cp -R -f src/assets $dir/assets
 
 %clean
 rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc doc/ruff.html doc/ruff_ruff.html doc/ruff_ruff_sample.html doc/sample.tcl
+%doc doc/sample.tcl
 %tcl_noarchdir/%packagename%version
 
