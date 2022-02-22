@@ -1,9 +1,9 @@
 #!/usr/bin/tclsh
 
 set arch "noarch"
-set base "ruff-2.1"
+set base "ruff-2.1.1"
 
-set fileurl "https://github.com/apnadkarni/ruff/archive/v2.1.tar.gz"
+set fileurl "https://github.com/apnadkarni/ruff/archive/v2.1.1.tar.gz"
 
 set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
