@@ -10,7 +10,7 @@ Release:       0
 License:       BSD-2-Clause
 Group:         Development/Libraries/Tcl
 Source:        %{packagename}-%{version}.tar.gz
-URL:           http://woof.sourceforge.net/ruff.html
+URL:           https://ruff.magicsplat.com
 BuildArch:     noarch
 BuildRequires: tcl >= 8.6
 Requires:      tcl >= 8.6
